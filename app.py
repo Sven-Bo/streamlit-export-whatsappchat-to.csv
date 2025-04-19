@@ -24,14 +24,28 @@ st.set_page_config(
 
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
-            <style>
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-#st.markdown(hide_st_style, unsafe_allow_html=True)
-st_lottie(lottie_message, height=140, width=None, key="message")
-st.header(":calling: Convert WhatsApp Chat history to CSV")
+    <style>
+    /* Hide default Streamlit header and footer */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+with st.sidebar:
+    st.markdown("## 📂 Navigation", unsafe_allow_html=True)
+    st.markdown("[▶️ **Watch Explanation Video**](https://youtu.be/i62VbGSI93A?si=sqh1qRZVSOEFRw-r)")
+    st.markdown("[📺 YouTube Channel](https://youtube.com/@codingisfun)")
+    st.markdown("[🌐 Website](https://pythonandvba.com)")
+    st.markdown("[💼 LinkedIn](https://www.linkedin.com/in/sven-bosau/)")
+    st.markdown("---")
+    st.markdown("<div style='text-align:center; font-size:0.95em;'>Created with ❤️ by <a href='https://www.linkedin.com/in/sven-bosau/' target='_blank'>Sven Bosau</a></div>", unsafe_allow_html=True)
+
+
+st_lottie(lottie_message, height=120, key="message")
+st.title("Convert WhatsApp Chat history to CSV")
+st.caption("Easily convert your exported WhatsApp chat to a clean CSV file for analysis.")
 
 uploaded_file = st.file_uploader("Choose your WhatsApp history text file", type="txt")
 if uploaded_file is None:

@@ -1,0 +1,25 @@
+[theme]
+primaryColor = "#25D366"
+backgroundColor = "#f9f9f9"
+secondaryBackgroundColor = "#e0e0e0"
+textColor = "#222222"
+font = "sans serif"
+
+[server]
+headless = true
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "type"
+
+[global]
+disableWidgetStateDuplicationWarning = true
+showWarningOnDirectExecution = false
+
+[runner]
+magicEnabled = true
+fastReruns = true
+
+[logger]
+level = "error"
+messageFormat = "%(asctime)s %(message)s"
