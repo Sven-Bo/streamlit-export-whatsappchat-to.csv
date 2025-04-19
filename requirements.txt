@@ -1,4 +1,4 @@
-pandas==1.3.5
-streamlit_lottie==0.0.2
-requests==2.24.0
-streamlit==1.3.0
+pandas
+streamlit_lottie
+requests
+streamlit
